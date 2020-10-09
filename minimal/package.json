@@ -1,0 +1,12 @@
+{
+  "name": "toast-minimal-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "license": "MIT",
+  "dependencies": {
+    "@sector/breadbox": "^0.0.4",
+    "toast": "^0.3.12"
+  }
+}
