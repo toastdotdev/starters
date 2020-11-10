@@ -1,4 +1,10 @@
+import { sourceMdx } from "@toastdotdev/mdx";
+
 export const sourceData = async ({ setDataForSlug }) => {
-  // some marketing data
+  await sourceMdx({
+    setDataForSlug,
+    directory: "./content",
+    slugPrefix: "/",
+  });
   return;
 };
