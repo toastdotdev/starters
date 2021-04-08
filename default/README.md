@@ -8,6 +8,8 @@ The postinstall script will run whenever you install the dependencies for a proj
 
 ### npm run build
 
+This is the command you'll be running most often.
+
 ```shell
 npm run build
 ```
@@ -16,13 +18,17 @@ The build command runs the CSS build (Tailwind) and the site build (Toast).
 
 ### npm run build:css
 
-The CSS build compiles (and purges) Tailwind via PostCSS.
+The CSS build compiles Tailwind via PostCSS using Tailwind's "jit" mode.
 
 ```shell
 npm run build:css
 ```
 
 `postcss-cli` hasn't enabled node v12+ ESM yet, so we have to put our config in a special folder. This folder is `legacy-commonjs` and the only reason it is special is that it has a `package.json` with a single field: `"type": "commonjs"`, which tells node that the files in that folder are all CommonJS files (that is, they use `require()` and not `import`).
+
+### npm run build:css:watch
+
+Same as `build:css` except it's a watch process that will update your css files as you make changes.
 
 ### npm run build:site
 

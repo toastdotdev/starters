@@ -6,32 +6,22 @@
   "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
   "license": "MIT",
   "scripts": {
-    "postinstall": "breadbox --dest public/web_modules",
+    "postinstall": "./postinstall.js",
     "build": "npm run build:css && npm run build:site",
-    "build:css": "postcss --config legacy-commonjs index.css -o public/styles.css",
+    "build:css": "NODE_ENV=production postcss --config legacy-commonjs index.css -o public/styles.css",
+    "build:css:watch": "postcss --config legacy-commonjs index.css -o public/styles.css -w",
     "build:site": "toast incremental ."
   },
   "dependencies": {
-    "@sector/breadbox": "^0.0.4",
-    "@toastdotdev/mdx": "^0.1.3",
-    "postcss": "^8.1.6",
-    "postcss-cli": "^8.2.0",
-    "tailwindcss": "^1.9.6",
-    "toast": "^0.3.30"
+    "esinstall": "1.1.4",
+    "@toastdotdev/mdx": "^0.2.3",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1",
+    "toast": "^0.3.43"
   },
-  "snowpack": {
-    "exclude": [
-      "public/**/*",
-      "toast.js"
-    ],
-    "installOptions": {
-      "alias": {
-        "react": "preact/compat"
-      }
-    },
-    "knownEntrypoints": [
-      "preact/hooks",
-      "preact"
-    ]
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "pretty-bytes": "5.6.0"
   }
 }
