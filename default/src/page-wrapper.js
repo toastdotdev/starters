@@ -5,7 +5,7 @@ import { MDXProvider } from "@mdx-js/preact";
 const components = {
   codeblock: (props) => (
     <div
-      class="bg-gray-900"
+      class="bg-gray-400"
       dangerouslySetInnerHTML={{ __html: props.children }}
     />
   ),
