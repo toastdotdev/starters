@@ -6,7 +6,7 @@ const components = {
   codeblock: (props) => (
     <div
       class="bg-gray-400"
-      dangerouslySetInnerHTML={{ __html: props.children }}
+      {...props}
     />
   ),
 };
