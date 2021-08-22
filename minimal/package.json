@@ -12,5 +12,8 @@
   "dependencies": {
     "esinstall": "1.1.4",
     "toast": "^0.3.43"
+  },
+  "devDependencies": {
+    "pretty-bytes": "5.6.0"
   }
 }
