@@ -6,11 +6,11 @@
   "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
   "license": "MIT",
   "scripts": {
-    "postinstall": "breadbox --dest public/web_modules",
+    "postinstall": "./postinstall.js",
     "build": "toast incremental ."
   },
   "dependencies": {
-    "@sector/breadbox": "^0.0.4",
-    "toast": "^0.3.12"
+    "esinstall": "1.1.4",
+    "toast": "^0.3.43"
   }
 }
