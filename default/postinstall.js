@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import { install, printStats } from "esinstall";
+import { install } from "esinstall";
 import prettyBytes from "pretty-bytes";
-import cTable from "console.table";
 import { options, specs } from "./esinstall.js";
 
 // esinstall doesn't let us quiet the output while it runs
@@ -16,7 +15,7 @@ const logger = {
   },
 };
 async function main() {
-  const { success, stats } = await install(specs, {
+  const { stats } = await install(specs, {
     dest: "./public/web_modules",
     logger,
     ...options,
