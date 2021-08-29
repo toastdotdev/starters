@@ -8,5 +8,5 @@ export const specs = [
 export const options = {
   alias: {
     react: "preact/compat",
-  },
+  }
 };
