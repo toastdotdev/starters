@@ -15,7 +15,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^2.1.3",
     "@mdx-js/preact": "^2.1.3",
-    "@toastdotdev/mdx": "^0.3.1",
+    "@toastdotdev/mdx": "^0.3.2",
     "console.table": "^0.10.0",
     "esinstall": "1.1.4",
     "postcss": "^8.2.9",
