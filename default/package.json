@@ -13,12 +13,13 @@
     "build:site": "toast incremental ."
   },
   "dependencies": {
-    "esinstall": "1.1.4",
     "@toastdotdev/mdx": "^0.2.3",
+    "console.table": "^0.10.0",
+    "esinstall": "1.1.4",
     "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.1",
-    "toast": "^0.3.43"
+    "toast": "^0.5.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
